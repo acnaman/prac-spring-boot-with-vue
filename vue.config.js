@@ -3,4 +3,5 @@ module.exports = {
       port: 8888,
       disableHostCheck: true,
   },
+  publicPath: '/vue/',
 };

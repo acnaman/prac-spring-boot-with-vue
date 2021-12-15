@@ -59,3 +59,6 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Vue Files
+src/main/resources/static/vue
