@@ -1,0 +1,22 @@
+version: '3'
+services:
+  openjdk:
+    build: ./openjdk
+    ports:
+      - "8080:8080"
+    command: /bin/sh -c "while :; do sleep 10; done"
+    volumes:
+      - ..:/workspace:cached
+
+  mysql:
+    image: mysql:5.7
+    platform: linux/x86_64
+    container_name: "dc-db-mysql"
+    restart: always
+    environment:
+      MYSQL_DATABASE: mysqldb
+      MYSQL_ROOT_PASSWORD: mysqldb
+    ports: 
+      - 13306:3306
+    volumes:
+      - ./mysql-confd:/etc/mysql/conf.d

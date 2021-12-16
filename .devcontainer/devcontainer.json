@@ -1,0 +1,22 @@
+{
+	"name": "My Java/Kotlin Application",
+
+	"dockerComposeFile": "../docker/docker-compose.yml",
+	"service": "openjdk",
+	"workspaceFolder": "/workspace",
+	"settings": {
+	},
+
+	"extensions": [
+		// Language: Java / Kotlin
+		"vscjava.vscode-java-pack",
+		"redhat.java",
+		"vscjava.vscode-java-debug",
+
+		// Spring Boot
+		"vscjava.vscode-spring-initializr",
+		"pivotal.vscode-spring-boot",
+		"pivotal.vscode-boot-dev-pack",
+		"vscjava.vscode-spring-boot-dashboard"
+	],
+}
